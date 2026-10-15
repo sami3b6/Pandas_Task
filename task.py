@@ -69,7 +69,7 @@ def merge_dataframes(left_df: pd.DataFrame, right_df: pd.DataFrame, on_column: s
     return pd.merge(left_df, right_df, on=on_column, how="inner")
 
 def sort_and_select_top(df: pd.DataFrame, sort_by_col: str, n: int) -> pd.DataFrame:
-    """Sub-task 5: Sort df in descending order by sort_by_col and return the top n rows."""
+    """Sub-task 5: Sort df in descending order by sort_by_col and return the top n rows.."""
     return df.sort_values(by=sort_by_col, ascending=False).head(n)
 
 def main():
